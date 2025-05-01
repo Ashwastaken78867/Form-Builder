@@ -1,19 +1,15 @@
 {
-  "compilerOptions": {
-    "target": "ES2020",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "rootDir": "../",                          
-    "outDir": "dist",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true,
-    "baseUrl": ".",                            
-    "paths": {
-      "@form-builder/validation": ["../packages/validation/src"]
-    }
-  },
-  "include": ["../server/src/**/*", "../packages/validation/src/**/*"],  
-  "exclude": ["node_modules", "dist"]
-}
+    "compilerOptions": {
+      "target": "ES2020",
+      "module": "NodeNext",
+      "moduleResolution": "NodeNext",
+      "rootDir": "./src",
+      "outDir": "dist",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "skipLibCheck": true
+    },
+    "include": ["src/**/*"],
+    "files": ["src/types/index.d.ts"]
+  }
